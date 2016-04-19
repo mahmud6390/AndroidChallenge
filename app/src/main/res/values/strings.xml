@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidChallenge</string>
+    <string name="action_settings">Clear Data</string>
+    <string name="input_your_data">Input your data</string>
+</resources>

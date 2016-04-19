@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Add" />
+        </RelativeLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/app_bar"
+        android:id="@+id/scrollView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            >
+            <TextView
+                android:id="@+id/text_view_api_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="API Key"
+                />
+            <EditText
+                android:id="@+id/edit_text_api_key"
+                android:layout_below="@+id/text_view_api_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/text_view_user_id"
+                android:layout_below="@+id/edit_text_api_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Id"
+                />
+            <EditText
+                android:id="@+id/edit_text_user_id"
+                android:layout_below="@+id/text_view_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_view_app_id"
+                android:layout_below="@+id/edit_text_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App Id"
+                />
+            <EditText
+                android:id="@+id/edit_text_app_id"
+                android:layout_below="@+id/text_view_app_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_view_pub"
+                android:layout_below="@+id/edit_text_app_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pub 0"
+                />
+            <EditText
+                android:id="@+id/edit_text_pub0"
+                android:layout_below="@+id/text_view_pub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_view_local"
+                android:layout_below="@+id/edit_text_pub0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Locale"
+                />
+            <EditText
+                android:id="@+id/edit_text_locale"
+                android:layout_below="@+id/text_view_local"
+                android:layout_width="match_parent"
+                android:enabled="false"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_view_device_id"
+                android:layout_below="@+id/edit_text_locale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Device id"
+                />
+            <EditText
+                android:id="@+id/edit_text_device_id"
+                android:layout_below="@+id/text_view_device_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                />
+            <TextView
+                android:id="@+id/text_view_ip"
+                android:layout_below="@+id/edit_text_device_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IP Address"
+                />
+            <EditText
+                android:id="@+id/edit_text_ip"
+                android:layout_below="@+id/text_view_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
