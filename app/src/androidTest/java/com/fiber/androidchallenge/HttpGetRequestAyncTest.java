@@ -20,7 +20,7 @@ public class HttpGetRequestAyncTest  extends ActivityInstrumentationTestCase2{
         super(HttpGetRequestAyncTest.class);
     }
     CountDownLatch signal = null;
-    String expected="expected";
+    String expected="fail";
     String actual="";
 
     @Override
